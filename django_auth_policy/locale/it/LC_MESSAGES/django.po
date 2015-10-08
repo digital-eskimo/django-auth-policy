@@ -209,8 +209,6 @@ msgid "Passwords must have at least {min_count} uppercase characters."
 msgstr "La password deve contenere almeno {min_count} caratteri maiuscoli."
 
 #: password_strength.py:100
-#, fuzzy
-#| msgid "Passwords must have at least one lowecase character."
 msgid "Passwords must have at least one lowercase character."
 msgstr "La password deve contenere almeno un carattere minuscolo."
 

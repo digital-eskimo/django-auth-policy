@@ -66,21 +66,16 @@ msgstr ""
 "Te veel mislukte inlogpogingen. Uw account is voor {duration} geblokkeerd."
 
 #: forms.py:23
-#, fuzzy
-#| msgid "password"
 msgid "Password"
-msgstr "wachtwoord"
+msgstr "Wachtwoord"
 
 #: forms.py:26
-#, fuzzy, python-format
-#| msgid ""
-#| "Please enter a correct username and password. Note that both fields may "
-#| "be case-sensitive."
+#, python-format
 msgid ""
 "Please enter a correct %(username)s and password. Note that both fields may "
 "be case-sensitive."
 msgstr ""
-"Voer een correcte gebruikersnaam en wachtwoord in. Let op dat beide velden "
+"Voer een correcte %(username)s en wachtwoord in. Let op dat beide velden "
 "hoofdlettergevoelig zijn."
 
 #: forms.py:28
@@ -215,8 +210,6 @@ msgid "Passwords must have at least {min_count} uppercase characters."
 msgstr "Wachtwoorden moeten minimaal {min_count} hoofdletter bevatten."
 
 #: password_strength.py:100
-#, fuzzy
-#| msgid "Passwords must have at least one lowecase character."
 msgid "Passwords must have at least one lowercase character."
 msgstr "Wachtwoorden moeten minimaal één kleine letter bevatten."
 
@@ -266,16 +259,13 @@ msgid "Passwords are not allowed to contain the following term(s): {terms}."
 msgstr "Wachtwoorden mogen niet de volgende term(en) bevatten: {terms}."
 
 #: password_strength.py:207
-#, fuzzy
-#| msgid "The new password must not be the same as the old password"
 msgid "Password must be different than your last password."
-msgstr "Het nieuwe wachtwoord mag niet hetzelfde zijn als het oude wachtwoord"
+msgstr "Het nieuwe wachtwoord mag niet hetzelfde zijn als het vorige wachtwoord"
 
 #: password_strength.py:208
-#, fuzzy, python-brace-format
-#| msgid "The new password must not be the same as the old password"
+#, python-brace-format
 msgid "Passwords must not be one of your last {max_pw_history} passwords."
-msgstr "Het nieuwe wachtwoord mag niet hetzelfde zijn als het oude wachtwoord"
+msgstr "Het wachtwoord mag niet hetzelfde zijn als één van de {max_pw_history} vorigen."
 
 #: templates/admin/django_auth_policy/confirm_temporary_password.html:6
 #: templates/admin/django_auth_policy/set_temporary_password.html:6

@@ -97,7 +97,7 @@ class PasswordContainsUpperCase(PasswordContains):
 
 class PasswordContainsLowerCase(PasswordContains):
     chars = 'abcdefghijklmnopqrstuvwxyz'
-    text = _('Passwords must have at least one lowecase character.')
+    text = _('Passwords must have at least one lowercase character.')
     plural_text = _('Passwords must have at least {min_count} '
                     'lowercase characters.')
 

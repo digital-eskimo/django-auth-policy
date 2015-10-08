@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 15:16+0200\n"
+"POT-Creation-Date: 2015-10-08 18:38+0200\n"
 "PO-Revision-Date: 2015-09-23 15:40+0000\n"
 "Last-Translator: Michele Cella <michele@enuan.com>\n"
+"Language: Italian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: admin.py:44
@@ -36,6 +36,7 @@ msgstr ""
 "potrebbero essere significative."
 
 #: authentication.py:107
+#, python-brace-format
 msgid "{days} days"
 msgstr "{days} giorni"
 
@@ -44,6 +45,7 @@ msgid "a day"
 msgstr "un giorno"
 
 #: authentication.py:111
+#, python-brace-format
 msgid "{mins} minutes"
 msgstr "{mins} minuti"
 
@@ -52,10 +54,12 @@ msgid "a minute"
 msgstr "un minuto"
 
 #: authentication.py:115
+#, python-brace-format
 msgid "{secs} seconds"
 msgstr "{secs} secondi"
 
 #: authentication.py:130 authentication.py:194
+#, python-brace-format
 msgid ""
 "Too many failed login attempts. Your account has been locked for {duration}."
 msgstr ""
@@ -178,6 +182,7 @@ msgid "user changes"
 msgstr "modifiche degli utenti"
 
 #: password_change.py:25
+#, python-brace-format
 msgid "One is required to change passwords every {age} days."
 msgstr "La password deve essere cambiata ogni {age} giorni."
 
@@ -190,6 +195,7 @@ msgid "Your must change your temporary password into a personal password."
 msgstr "Devi cambiare la tua password temporanea con una password personale."
 
 #: password_strength.py:50
+#, python-brace-format
 msgid "Passwords must be at least {min_length} characters in length."
 msgstr "La password deve essere lunga almeno {min_length} caratteri."
 
@@ -198,14 +204,18 @@ msgid "Passwords must have at least one uppercase character."
 msgstr "La password deve contenere almeno un carattere maiuscolo."
 
 #: password_strength.py:94
+#, python-brace-format
 msgid "Passwords must have at least {min_count} uppercase characters."
 msgstr "La password deve contenere almeno {min_count} caratteri maiuscoli."
 
 #: password_strength.py:100
-msgid "Passwords must have at least one lowecase character."
+#, fuzzy
+#| msgid "Passwords must have at least one lowecase character."
+msgid "Passwords must have at least one lowercase character."
 msgstr "La password deve contenere almeno un carattere minuscolo."
 
 #: password_strength.py:101
+#, python-brace-format
 msgid "Passwords must have at least {min_count} lowercase characters."
 msgstr "La password deve contenere almeno {min_count} caratteri minuscoli."
 
@@ -214,6 +224,7 @@ msgid "Passwords must have at least one number."
 msgstr "La password deve contenere almeno un carattere numerico."
 
 #: password_strength.py:108
+#, python-brace-format
 msgid "Passwords must have at least {min_count} numbers."
 msgstr "La password deve contenere almeno {min_count} caratteri numerici"
 
@@ -223,6 +234,7 @@ msgstr ""
 "La password deve contenere almeno un carattere speciale (punteggiatura)."
 
 #: password_strength.py:115
+#, python-brace-format
 msgid ""
 "Passwords must have at least {min_count} special characters (punctuation)."
 msgstr ""
@@ -234,6 +246,7 @@ msgid "Passwords must have at least one alphabetic character."
 msgstr "La password deve contenere almeno un carattere alfabetico."
 
 #: password_strength.py:122
+#, python-brace-format
 msgid "Passwords must have at least {min_count} alphabetic characters."
 msgstr "La password deve contenere almeno {min_count} caratteri alfabetici."
 
@@ -242,6 +255,7 @@ msgid "Passwords are not allowed to contain (pieces of) your name or email."
 msgstr "La password non può contenere parti del tuo nome o della tua email."
 
 #: password_strength.py:176
+#, python-brace-format
 msgid "Passwords are not allowed to contain the following term(s): {terms}."
 msgstr "La password non può contenere i seguenti termini: {terms}."
 
@@ -250,6 +264,7 @@ msgid "Password must be different than your last password."
 msgstr "La password deve essere diversa dalla tua password attuale."
 
 #: password_strength.py:208
+#, python-brace-format
 msgid "Passwords must not be one of your last {max_pw_history} passwords."
 msgstr ""
 "La password non può essere identica alle tue ultime {max_pw_history} "
@@ -313,7 +328,7 @@ msgid "Username"
 msgstr "Nome utente"
 
 #: templates/admin/django_auth_policy/set_temporary_password.html:28
-#: user_admin.py:147 user_admin.py:157
+#: user_admin.py:140 user_admin.py:150
 msgid "Temporary password"
 msgstr "Password temporanea"
 
@@ -335,27 +350,26 @@ msgstr ""
 "Inserisci un nome utente valido. Questo campo può contenere solamente "
 "lettere, numeri e i caratteri @/./+/-/_"
 
-#: user_admin.py:83
-msgid "Locked"
-msgstr "Bloccato"
-
-#: user_admin.py:89
+#: user_admin.py:82
 msgid "Unlocked selected usernames"
 msgstr "Sbloccati i nomi utente per gli utenti selezionati"
 
-#: user_admin.py:90
+#: user_admin.py:83
 msgid "Unlock usernames of users"
 msgstr "Sblocca i nome utente per gli utenti selezionati"
 
-#: user_admin.py:96
+#: user_admin.py:89
 #, python-format
 msgid "%s users were (re)activated"
 msgstr "%s utenti sono stati (ri)attivati"
 
-#: user_admin.py:97
+#: user_admin.py:90
 msgid "(Re)activate users"
 msgstr "(Ri)attivare utenti"
 
-#: user_admin.py:116
+#: user_admin.py:109
 msgid "Set temporary password"
 msgstr "Imposta password temporanea"
+
+#~ msgid "Locked"
+#~ msgstr "Bloccato"

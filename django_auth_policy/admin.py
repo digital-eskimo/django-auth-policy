@@ -127,8 +127,7 @@ def admin_password_change(request, extra_context=None):
         'current_app': admin.site.name,
         'post_change_redirect': to_url,
         'password_change_form': StrictPasswordChangeForm,
-        'extra_context': dict(admin.site.each_context(request),
-                              **(extra_context or {})),
+        'extra_context': extra_context,
     }
     if admin.site.password_change_template is not None:
         defaults['template_name'] = admin.site.password_change_template

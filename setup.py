@@ -17,7 +17,7 @@ setup(
     license='BSD',
     packages=find_packages(exclude=["testsite", "testsite.*", "*.tests", "*.tests.*", "tests.*", "tests"]),
     include_package_data=True,
-    install_requires=['Django>=1.7'],
+    install_requires=['Django>=1.6'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',

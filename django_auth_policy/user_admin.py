@@ -136,8 +136,7 @@ class StrictUserAdmin(UserAdmin):
             return template.response.TemplateResponse(
                 request,
                 'admin/django_auth_policy/set_temporary_password.html',
-                dict(self.admin_site.each_context(request),
-                     **{'title': _('Temporary password'),
+                dict(**{'title': _('Temporary password'),
                         'opts': self.model._meta,
                         'passwords': passwords,
                         'changelist_url': \
@@ -146,8 +145,7 @@ class StrictUserAdmin(UserAdmin):
         return template.response.TemplateResponse(
             request,
             'admin/django_auth_policy/confirm_temporary_password.html',
-            dict(self.admin_site.each_context(request),
-                 **{'title': _('Temporary password'),
+            dict(**{'title': _('Temporary password'),
                     'opts': self.model._meta,
                     'for_users': users,
                     'changelist_url': \

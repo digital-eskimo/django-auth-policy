@@ -18,6 +18,10 @@ logger = logging.getLogger(__name__)
 class StrictAuthenticationForm(forms.Form):
     auth_policy = AuthenticationPolicyHandler()
     password_change_policy = PasswordChangePolicyHandler()
+    # Django 1.6-compatibility -- otherwise errors don't render
+    this_is_the_login_form = forms.BooleanField(
+        widget=forms.HiddenInput, required=False
+    )
 
     username = forms.CharField(max_length=254)
     password = forms.CharField(label=_("Password"), widget=forms.PasswordInput)
